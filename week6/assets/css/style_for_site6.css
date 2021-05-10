@@ -1,0 +1,76 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 10% 1fr 20%;
+    height: 80vh;
+    grid-template-areas: "header header header header header"
+        "main main main main aside"
+        "footer footer footer footer footer";
+    background: #dae9de;
+    color: rgb(8, 2, 2);
+    font: bold 14px/24px 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    justify-content: center;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "basic basic"
+        "section1 section2"
+        "section3 section3";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    gap: 6px;
+    background: #f1faf3;
+}
+
+.basic {
+    grid-area: basic;
+}
+
+.section1 {
+    grid-area: section1;
+    background: #dae9de;
+    padding: 4px;
+    margin: 4px;
+
+}
+
+.section2 {
+    grid-area: section2;
+    background: #dae9de;
+    padding: 4px;
+    margin: 4px;
+}
+
+.section3 {
+    grid-area: section3;
+    background: #dae9de;
+    padding: 4px;
+    margin: 4px;
+}
+
+.aside {
+    grid-area: aside;
+    align-self: center;
+
+}
+
+.footer {
+    grid-area: footer;
+    justify-content: space-between;
+    background: #d2d8d4;
+}
+
+.ft {
+    display: inline-block;
+    list-style-type: none;
+    background: #f1faf3;
+    padding: 15px;
+    margin: 6px;
+}
