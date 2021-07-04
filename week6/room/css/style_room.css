@@ -1,0 +1,277 @@
+body {
+   display: grid;
+   max-width: 1440px;
+   background-color: #FFFFFF;
+   font-family: 'Roboto', sans-serif;
+   font-size: 12px;
+}
+
+.wrapper {
+
+   padding-left: 15px;
+   padding-right: 15px;
+   margin: 0;
+}
+
+.nav {
+   display: flex;
+   justify-content: flex-end;
+   list-style-type: none;
+   background-color: #F5F5F5;
+
+   padding: 15px 10px;
+}
+
+.nav>li {
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.nav>li>a {
+   text-decoration: none;
+   color: #AAAAAA;
+}
+
+.header-top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 0;
+}
+
+.logo {
+   padding-left: 120px;
+   width: 50px;
+   height: 50px;
+}
+
+.nav2 {
+   display: flex;
+   list-style-type: none;
+}
+
+.nav2>li {
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+.nav2>li>a {
+   text-decoration: none;
+   color: #0c0909;
+}
+
+.nav3 {
+   display: flex;
+   list-style-type: none;
+}
+
+.nav3>li {
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.nav3>li>a {
+   text-decoration: none;
+   color: #0c0909;
+}
+
+.hr {
+   border: none;
+   background-color: #F5F5F5;
+   height: 2px;
+}
+
+.banner {
+   background-image: url(/room/img/bigroom.jpg);
+   background-repeat: no-repeat;
+   max-width: 1327px;
+   background-position: center center;
+   padding-top: 300px;
+   padding-bottom: 500px;
+   margin: 30px 50px;
+}
+
+.design {
+   display: grid;
+   justify-self: center;
+   max-width: 1200px;
+   grid-template-columns: 1fr 2fr;
+   grid-template-rows: 1fr;
+   grid-template-areas: "desing-text develop";
+}
+
+.desing-text {
+   justify-self: center;
+   align-self: center;
+   max-width: 350px;
+   padding-left: 15px;
+   padding-right: 25px;
+   font-size: 48px;
+   color: #0c0909;
+}
+
+.develop {
+   justify-self: center;
+   align-self: center;
+   max-width: 569px;
+   padding-left: 25px;
+   padding-right: 25px;
+   font-size: 24px;
+   color: #AAAAAA;
+}
+
+.example {
+   display: grid;
+   justify-self: center;
+   max-width: 1296px;
+   margin: 60px 60px 15px 25px;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-template-areas: "phone focus"
+      "meet open";
+   column-gap: 5px;
+   row-gap: 30px;
+   font-size: 24px;
+}
+
+.phone {
+   justify-self: center;
+   align-self: center;
+   max-width: 588px;
+   padding-left: 45px;
+}
+
+.focus {
+   justify-self: center;
+   align-self: center;
+   max-width: 588px;
+   padding-right: 45px;
+}
+
+.meet {
+   justify-self: center;
+   align-self: center;
+   max-width: 588px;
+   padding-left: 45px;
+}
+
+.open {
+   justify-self: center;
+   align-self: center;
+   max-width: 588px;
+   padding-right: 45px;
+}
+
+footer {
+   display: grid;
+   max-height: 619px;
+}
+
+.footer {
+   display: grid;
+   max-height: 471px;
+   background-color: #2B2B2B;
+   font-size: 14px;
+   color: #FFFFFF;
+   margin: 60px 0px;
+   padding: 90px 40px 120px 120px;
+   grid-template-areas: "logofr about support follow join"
+      "logofr showrooms office follow yes";
+   grid-template-columns: repeat (3, 1fr) 2fr 2.5fr;
+   grid-template-rows: repeat (2, 1fr);
+   gap: 15px;
+}
+
+.logofr {
+   grid-area: logofr;
+}
+
+.about {
+   grid-area: about;
+   list-style-type: none;
+}
+
+.showrooms {
+   grid-area: showrooms;
+   list-style-type: none;
+}
+
+.support {
+   grid-area: support;
+   list-style-type: none;
+}
+
+.office {
+   grid-area: office;
+   list-style-type: none;
+}
+
+.follow {
+   grid-area: follow;
+}
+
+.social {
+   padding: 0px 5px;
+}
+
+.social1 {
+   padding: 0px 0px 5px;
+}
+
+.join {
+   grid-template-areas: join;
+}
+
+.list {
+   font-size: 13px;
+}
+
+.yes {
+   grid-area: yes;
+}
+
+.checkbox {
+   max-width: 369px;
+   max-height: 78px;
+}
+
+input {
+   border: 2px solid #AAAAAA;
+   background-color: #2B2B2B;
+   max-width: 327px;
+   max-height: 54px;
+   min-width: 250px;
+   min-height: 40px;
+   padding: 10px 30px;
+   cursor: pointer;
+}
+
+.check {
+   max-width: 28px;
+   max-height: 26px;
+   min-width: 20px;
+   min-height: 18px;
+}
+
+.yes-text {
+   padding: 0px 20px 0px 0px;
+   font-size: 11px;
+   color: #AAAAAA;
+   max-width: 369px;
+   max-height: 78px;
+}
+
+.btn1 {
+   padding: 55px 0px 0px 265px;
+}
+
+.btn {
+   font-size: 14px;
+   color: #f7f3f3;
+   text-decoration: none;
+}
+
+.btn:hover {
+   font-size: 16px;
+   color: #AAAAAA;
+}
