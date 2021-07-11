@@ -1,0 +1,499 @@
+@media (max-width: 992px) {
+   .container {
+      max-width: 750px;
+   }
+}
+
+@media (max-width: 768px) {
+   .container {
+      max-width: 540px;
+   }
+}
+
+@media (max-width: 576px) {
+   .container {
+      max-width: 330px;
+   }
+}
+
+@media (max-width: 375px) {
+   .container {
+      max-width: none;
+   }
+}
+
+
+.container {
+   max-width: 100%;
+   margin: 0px auto;
+   padding: 0px 15px;
+}
+
+body {
+   display: grid;
+   max-width: 100%;
+   background-color: #FFFFFF;
+   font-family: 'Roboto', sans-serif;
+   font-size: 1.5vw;
+}
+
+.wrapper {
+
+   padding-left: 15px;
+   padding-right: 15px;
+   margin: 0;
+}
+
+.nav {
+   display: flex;
+   justify-content: flex-end;
+   list-style-type: none;
+   background-color: #F5F5F5;
+   padding: 15px 10px;
+}
+
+.nav>li {
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.nav>li>a {
+   text-decoration: none;
+   color: #AAAAAA;
+}
+
+.header-top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 0;
+}
+
+.logo {
+   padding-left: 120px;
+   width: 50px;
+   height: 50px;
+}
+
+.nav2 {
+   display: flex;
+   list-style-type: none;
+}
+
+.nav2>li {
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+.nav2>li>a {
+   text-decoration: none;
+   color: #0c0909;
+}
+
+.nav3 {
+   display: flex;
+   list-style-type: none;
+}
+
+.nav3>li {
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.nav3>li>a {
+   text-decoration: none;
+   color: #0c0909;
+}
+
+.hr {
+   border: none;
+   background-color: #F5F5F5;
+   height: 2px;
+}
+
+.banner {
+   background-image: url(/room7/img/bigroom.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   padding-top: 300px;
+   padding-bottom: 500px;
+}
+
+.design {
+   display: grid;
+   justify-self: center;
+   max-width: 100%;
+   grid-template-columns: 1fr 2fr;
+   grid-template-rows: 1fr;
+   grid-template-areas: "desing-text develop";
+}
+
+.desing__text1 {
+   justify-self: center;
+   align-self: center;
+   max-width: 350px;
+   padding-left: 15px;
+   padding-right: 25px;
+   font-size: 48px;
+   color: #0c0909;
+}
+
+.desing__text2 {
+   justify-self: center;
+   align-self: center;
+   max-width: 569px;
+   padding-left: 25px;
+   padding-right: 25px;
+   font-size: 24px;
+   color: #AAAAAA;
+}
+
+.example {
+   display: grid;
+   justify-self: center;
+   max-width: 100%;
+   margin: 60px 60px 15px 25px;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-template-areas: "phone focus"
+      "meet open";
+   column-gap: 5px;
+   row-gap: 30px;
+   font-size: 24px;
+}
+
+.example__phone {
+   grid-area: phone;
+   justify-self: center;
+   align-self: center;
+   max-width: 588px;
+   padding-left: 35px;
+}
+
+.example__focus {
+   grid-area: focus;
+   justify-self: center;
+   align-self: center;
+   max-width: 588px;
+   padding-right: 35px;
+}
+
+.example__meet {
+   grid-area: meet;
+   justify-self: center;
+   align-self: center;
+   max-width: 588px;
+   padding-left: 35px;
+}
+
+
+.example__open {
+   grid-area: open;
+   justify-self: center;
+   align-self: center;
+   max-width: 588px;
+   padding-right: 35px;
+}
+
+.brands {
+   display: grid;
+   max-width: 90%;
+   margin: 0 auto;
+   grid-template-areas: "brands__box"
+      "brands__icons";
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1.5fr;
+   padding-top: 50px;
+   padding-bottom: 100px;
+}
+
+.brands__box {
+   display: grid;
+   margin: 0 auto;
+   padding-bottom: 70px;
+}
+
+.brands__text1 {
+   font-size: 48px;
+}
+
+.brands__text2 {
+   font-size: 24px;
+   justify-self: center;
+}
+
+.brands__icons {
+   display: grid;
+   margin: 0 auto;
+   grid-template-areas: "nike nasa google uber walmart sales"
+      "hulu reddit knotel samsung amazon angel"
+      "buzz apple harry asana morg greenpeace";
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   gap: 50px;
+}
+
+.nike {
+   grid-area: nike;
+   justify-self: center;
+}
+
+.nasa {
+   grid-area: nasa;
+   justify-self: center;
+}
+
+.google {
+   grid-area: google;
+   justify-self: center;
+}
+
+.uber {
+   grid-area: uber;
+   justify-self: center;
+}
+
+.walmart {
+   grid-area: walmart;
+   justify-self: center;
+}
+
+.sales {
+   grid-area: sales;
+   justify-self: center;
+}
+
+.hulu {
+   grid-area: hulu;
+   justify-self: center;
+}
+
+.reddit {
+   grid-area: reddit;
+   justify-self: center;
+}
+
+.knotel {
+   grid-area: knotel;
+   justify-self: center;
+}
+
+.samsung {
+   grid-area: samsung;
+   justify-self: center;
+}
+
+.amazon {
+   grid-area: amazon;
+   justify-self: center;
+}
+
+.angel {
+   grid-area: angel;
+   justify-self: center;
+}
+
+.buzz {
+   grid-area: buzz;
+   justify-self: center;
+}
+
+.apple {
+   grid-area: apple;
+   justify-self: center;
+}
+
+.harry {
+   grid-area: harry;
+   justify-self: center;
+}
+
+.asana {
+   grid-area: asana;
+   justify-self: center;
+}
+
+.morg {
+   grid-area: morg;
+   justify-self: center;
+}
+
+.greenpeace {
+   grid-area: greenpeace;
+   justify-self: center;
+}
+
+.spirit {
+   display: grid;
+   max-width: 1296px;
+   margin: 0 auto;
+   align-content: space-between;
+   grid-template-areas: "spirit__direction"
+      "spirit__build"
+      "spirit__design";
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(3, 1fr);
+   row-gap: 30px;
+   padding-top: 50px;
+   padding-bottom: 40px;
+}
+
+.spirit__direction {
+   display: grid;
+   grid-area: spirit__direction;
+   grid-template-areas: "spirit__girls"
+      "spirit__text1";
+   grid-template-columns: 1.1fr 0.9fr;
+   grid-template-rows: 1fr;
+}
+
+.spirit__basic {
+   display: grid;
+   max-width: 300px;
+   margin: 0 auto;
+   justify-content: center;
+   align-content: center;
+}
+
+.spirit__span {
+   font-size: 32px;
+   color: #0c0909;
+}
+
+.spirit__p {
+   font-size: 16px;
+   color: #AAAAAA;
+}
+
+.spirit__build {
+   display: grid;
+   grid-area: spirit__build;
+   grid-template-areas: "spirit__text2"
+      "spirit__hand";
+   grid-template-columns: 0.9fr 1.1fr;
+   grid-template-rows: 1fr;
+}
+
+.spirit__design {
+   display: grid;
+   grid-area: spirit__design;
+   grid-template-areas: "spirit__water"
+      "spirit__text1";
+   grid-template-columns: 1.1fr 0.9fr;
+   grid-template-rows: 1fr;
+}
+
+footer {
+   display: grid;
+   max-width: 100%;
+   max-height: 619px;
+}
+
+.footer {
+   display: grid;
+   max-height: 471px;
+   background-color: #2B2B2B;
+   font-size: 14px;
+   color: #FFFFFF;
+   margin: 60px 0px;
+   padding: 90px 40px 120px 120px;
+   grid-template-areas: "logofr about support follow join"
+      "logofr showrooms office follow yes";
+   grid-template-columns: repeat (3, 1fr) 2fr 2.5fr;
+   grid-template-rows: repeat (2, 1fr);
+   gap: 15px;
+}
+
+.logofr {
+   grid-area: logofr;
+}
+
+.about {
+   grid-area: about;
+   list-style-type: none;
+}
+
+.showrooms {
+   grid-area: showrooms;
+   list-style-type: none;
+}
+
+.support {
+   grid-area: support;
+   list-style-type: none;
+}
+
+.office {
+   grid-area: office;
+   list-style-type: none;
+}
+
+.follow {
+   grid-area: follow;
+}
+
+.social {
+   padding: 0px 5px;
+}
+
+.social1 {
+   padding: 0px 0px 5px;
+}
+
+.join {
+   grid-template-areas: join;
+}
+
+.list {
+   font-size: 13px;
+}
+
+.yes {
+   grid-area: yes;
+}
+
+.checkbox {
+   max-width: 369px;
+   max-height: 78px;
+}
+
+input {
+   border: 2px solid #AAAAAA;
+   background-color: #2B2B2B;
+   max-width: 327px;
+   max-height: 54px;
+   min-width: 250px;
+   min-height: 40px;
+   padding: 10px 30px;
+   cursor: pointer;
+}
+
+.check {
+   max-width: 28px;
+   max-height: 26px;
+   min-width: 20px;
+   min-height: 18px;
+}
+
+.yes-text {
+   padding: 0px 20px 0px 0px;
+   font-size: 11px;
+   color: #AAAAAA;
+   max-width: 369px;
+   max-height: 78px;
+}
+
+.btn1 {
+   padding: 55px 0px 0px 265px;
+}
+
+.btn {
+   font-size: 14px;
+   color: #f7f3f3;
+   text-decoration: none;
+}
+
+.btn:hover {
+   font-size: 16px;
+   color: #AAAAAA;
+}

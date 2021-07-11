@@ -1,0 +1,100 @@
+.wrapper {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: 10% 1fr 20%;
+   width: 100vw;
+   height: 100vh;
+   grid-template-areas: "header header header header header"
+      "main main main main aside"
+      "footer footer footer footer footer";
+   background: #dae9de;
+   color: rgb(8, 2, 2);
+   font: bold 2vw/4vw 'Roboto', sans-serif;
+   text-align: center;
+}
+
+.header {
+   grid-area: header;
+   justify-content: center;
+}
+
+.main {
+   grid-area: main;
+   display: grid;
+   grid-template-areas: "basic basic"
+      "section1 section2"
+      "section3 section3";
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 33.33% 33.33% 33.33%;
+   gap: 6px;
+   background: #FFF8E3;
+   padding-bottom: 25px;
+}
+
+.basic {
+   grid-area: basic;
+}
+
+.main__section {
+   display: grid;
+   justify-content: center;
+   align-content: center;
+   padding: 15px;
+   margin: 10px;
+}
+
+.section1 {
+   grid-area: section1;
+   background: #FEEAB9;
+}
+
+.section2 {
+   grid-area: section2;
+   background: #FEEAB9;
+}
+
+.section3 {
+   grid-area: section3;
+   background: #FEEAB9;
+}
+
+.aside {
+   display: grid;
+   grid-area: aside;
+   background-color: #DDECCB;
+}
+
+.footer {
+   display: grid;
+   grid-area: footer;
+   justify-content: space-around;
+   background: #d2d8d4;
+   grid-template-areas: "ft1 ft2 ft3 ft4";
+   grid-template-columns: repeat (4, 1fr);
+   grid-template-rows: 1fr;
+}
+
+.footer__ft {
+   display: grid;
+   background: #f1faf3;
+   justify-content: center;
+   align-content: center;
+   padding: 15px;
+   margin: 10px;
+}
+
+.ft1 {
+   grid-area: ft1;
+}
+
+.ft2 {
+   grid-area: ft2;
+}
+
+.ft3 {
+   grid-area: ft3;
+}
+
+.ft4 {
+   grid-area: ft4;
+}
