@@ -1,0 +1,213 @@
+.wrapper {}
+
+.header-top {
+   display: grid;
+   max-height: 40px;
+   justify-content: center;
+   align-content: center;
+}
+
+.header-top__vr {
+   display: grid;
+   justify-self: center;
+   align-self: center;
+   font-size: 0.9vw;
+}
+
+.hr {
+   border: none;
+   background-color: #F5F5F5;
+   height: 2px;
+}
+
+.header-down {
+   display: grid;
+   grid-template-columns: repeat (2, 1fr);
+   grid-template-rows: 1fr;
+   grid-template-areas: "logo basket";
+   justify-content: space-between;
+}
+
+.header-down__logo {
+   grid-area: logo;
+   justify-self: start;
+   padding-left: 3vw;
+}
+
+.header-down__basket {
+   grid-area: basket;
+   justify-self: end;
+   padding-right: 3vw;
+}
+
+.main {
+   display: grid;
+   grid-template-columns: 0.8fr 1.2fr;
+   grid-template-rows: 1fr;
+   grid-template-areas: "text banner";
+   justify-content: space-around;
+   padding-top: 25px;
+   padding-bottom: 30px;
+}
+
+.main__text {
+   grid-area: text;
+   display: grid;
+   max-width: 542px;
+   margin-left: 105px;
+   align-content: space-between;
+}
+
+.main__container {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 0.7fr 0.3fr;
+   grid-template-areas: "main__title"
+      "main__sense"
+      "main__btn";
+}
+
+.main__title {
+   grid-area: main__title;
+   /*max-height: 215px;*/
+   font: 90px bold;
+   line-height: 10vh;
+}
+
+.main__sense {
+   grid-area: main__sense;
+   /*max-height: 100px;*/
+   align-self: center;
+   font-size: 24px;
+}
+
+.main__btn {
+   grid-area: main__btn;
+   /* max-height: 90px;*/
+
+}
+
+.btn {
+   display: block;
+   text-align: center;
+   line-height: 80px;
+   max-width: 270px;
+   text-decoration: none;
+   font-size: 40px;
+   color: rgb(12, 12, 11);
+   background-color: #5222D0;
+   border-radius: 60px;
+}
+
+.btn:hover {
+   background: linear-gradient(to right, #a8c0ff, #5222D0);
+   color: cornsilk;
+}
+
+.main__nav {
+   font-size: 24px;
+   color: #6034D4;
+}
+
+.href {
+   text-decoration: none;
+   padding-left: 23px;
+}
+
+.main__banner {
+   grid-area: banner;
+   display: grid;
+   justify-self: end;
+}
+
+.block {
+   display: grid;
+   margin: 0 auto;
+   grid-template-columns: repeat (3, 1fr);
+   grid-template-rows: 2fr 1fr;
+   grid-template-areas: "sciens robot it"
+      "games price email";
+   justify-content: space-around;
+}
+
+.vista {
+   display: inline-grid;
+   font-size: 26px;
+   margin: 50px 20px 10px 115px;
+}
+
+.block__box {
+   display: grid;
+   max-width: 440px;
+   justify-content: center;
+   align-items: center;
+}
+
+.box1 {
+   grid-area: sciens;
+}
+
+.box2 {
+   grid-area: robot;
+}
+
+.box3 {
+   grid-area: it;
+}
+
+.box4 {
+   grid-area: games;
+}
+
+.box5 {
+   grid-area: price;
+}
+
+.box6 {
+   grid-area: email;
+   background-color: #EC615C;
+   justify-content: start;
+}
+
+.block__title-box6 {
+   padding-left: 15px;
+   font-size: 34px;
+   color: white;
+}
+
+.block__email {
+   margin-left: 15px;
+   padding-left: 10px;
+   padding-bottom: 10px;
+   min-width: 250px;
+   min-height: 40px;
+}
+
+.block__title {
+   font-size: 34px;
+}
+
+.block__text {
+   display: grid;
+   max-width: 365px;
+   font-size: 22px;
+   justify-content: start;
+   align-items: start;
+   line-height: 30px;
+}
+
+.href-page2 {
+   text-decoration: none;
+   color: black;
+   padding-left: 23px;
+}
+
+.block__btn {
+   padding-top: 10px;
+   padding-left: 15px;
+   padding-bottom: 40px;
+}
+
+.page2 {
+   padding: 120px;
+}
